@@ -17,7 +17,7 @@ export default function(state = getInitialState, action) {
         searchedMovies: action.payload,
         selectedMovies: action.payload,
         movieTitles,
-        baseUrl: 'http://image.tmdb.org/t/p/w342',
+        baseUrl: 'http://image.tmdb.org/t/p/w185',
       }
       break;
     case View_Movie:
