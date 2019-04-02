@@ -1,0 +1,283 @@
+body {
+  background: black;
+}
+
+.bar{
+  height: 159px;
+}
+.movie-table{
+  content: "";
+  clear: both;
+  margin: 30px;
+}
+
+.movie-detail-table{
+  text-align: left;
+}
+
+.title-header{
+  color: blue;
+}
+.movie-big{
+  float: left;
+}
+.movie-details{
+  color: white;
+  float: left;
+  margin-left: 40px;
+  font-family: fantasy;
+  font-size: 17px;
+}
+
+.movie-overview{
+  float: left;
+  color: white;
+}
+.pv-nav{
+  background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    margin: 0;
+    padding: 0;
+    /* width: 50%; */
+    color: rgba(242,244,246,.9);
+    display: table;
+    box-sizing: border-box;
+    text-size-adjust: 100%;
+    font-size: 17px;
+    line-height: 24px;
+}
+
+.pv-nav-container{
+  position: relative;
+    width: 50%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    float: left;
+    display: table-cell;
+    align-items: center;
+    padding: 16px 48px;
+}
+.pv-nav-primary-components {
+  display: table-cell;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.pv-nav .pv-nav-search {
+    pointer-events: none;
+    margin: 0 16px 0 0;
+    z-index: 1;
+}
+
+.search-text-container {
+  padding: 9px;
+  color: white;
+  font-family: cursive;
+    margin-left: 20px;
+    font-size: 41px;
+    border: currentColor;
+    float: left;
+    width: 85%;
+    background: transparent;
+}
+
+.search-sug-container ol{
+  list-style: none;
+  padding: 0;
+  top: 118px;
+  left: 417px;
+  position: absolute;
+  right: 0;
+  margin-top: 40px;
+  pointer-events: all;
+  background: #252e39;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  -webkit-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+  width: 65%;
+}
+
+.search-close-container {
+  padding: 10px;
+  background: transparent;
+  color: white;
+  font-size: 41px;
+  border: currentColor;
+  cursor: pointer;
+}
+
+.movies-container{
+  display: flex;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie{
+  margin: 20px;
+  cursor: pointer;
+}
+
+.moviePage{
+  width: 100px;
+  color: red;
+  height: 200px;
+}
+
+.pv-brand-logo::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.pv-brand-logo{
+  display: block;
+    box-sizing: border-box;
+}
+.radio-button-container{
+  display: block;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+}
+
+.year-container{
+  color: gray;
+  margin-bottom: 90px;
+}
+.check-container{
+  padding-left: 20px;
+  font-size: 25px;
+}
+
+.check-container input[type=checkbox], input[type=radio]{
+  width: 20px;
+  height: 20px;
+  padding-right: 20px;
+}
+
+.filter-button{
+  float: left;
+  margin: 30px;
+  font-family: fantasy;
+}
+.clear-filter-container{
+  text-align: center;
+}
+
+.clear-filter-container button{
+  width: 125px;
+  height: 37px;
+  font-size: 18px;
+}
+.table-movie{
+  width: 100%;
+}
+.overview-content{
+  font-size: 31px;
+}
+@media screen and (max-width: 1400px) {
+  .movie-img-big-container{
+    width: 700px;
+  }
+  .movie-details {
+    font-size: 15px
+  }
+}
+@media screen and (max-width: 1200px) {
+  .movie-img-big-container{
+    width: 550px
+  }
+  .movie-details {
+    font-size: 12px;
+  }
+  .overview-content{
+    font-size: 22px;
+  }
+  .table-movie{
+    width: 300px;
+  }
+  .pv-brand-logo{
+    width: 250px;
+  }
+}
+  @media screen and (max-width: 1000px) {
+    .movie-img-big-container{
+      width: 500px;
+    }
+    .movie-details {
+      font-size: 12px;
+    }
+    .overview-content{
+      font-size: 22px;
+    }
+    .table-movie{
+      width: 200px;
+    }
+    .pv-brand-logo{
+      width: 200px;
+    }
+    .search-text-container {
+      width: 75%
+    }
+  }
+  @media screen and (max-width: 950px) {
+    .movie-img-big-container{
+      width: 100%;
+    }
+    .overview-container{
+      margin: 30px;
+    }
+    .movie-details {
+      font-size: 14px;
+      margin: 0;
+    }
+    .overview-content{
+      font-size: 25px;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .table-movie{
+      width: 100px;
+    }
+    .pv-brand-logo{
+      width: 160px;
+    }
+    .search-text-container {
+      width: 50%
+    }
+  }
+    @media screen and (max-width: 500px) {
+      .table-movie{
+        width: 50px;
+      }
+      .pv-brand-logo{
+        width: 120px;
+      }
+      .search-text-container {
+        width: 30%
+      }
+      .movies-container {
+        clear: left;
+    }
+  }
+
+  @media screen and (max-width: 300px) {
+    .pv-brand-logo{
+      width: 80px;
+    }
+    .search-text-container {
+      width: 20%
+    }
+}
