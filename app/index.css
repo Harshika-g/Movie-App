@@ -34,7 +34,7 @@ body {
   color: white;
 }
 .pv-nav{
-  background-color: black;
+    background-color: '#0f171e';
     position: fixed;
     top: 0;
     left: 0;
@@ -47,10 +47,14 @@ body {
     display: table;
     box-sizing: border-box;
     text-size-adjust: 100%;
+    font-family: Amazon Ember Regular,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    cursor: default;
     font-size: 17px;
     line-height: 24px;
+    background-image: linear-gradient(180deg,#1b2530 0,rgba(27,37,48,1));
+    background-repeat: repeat-x;
 }
-
 .pv-nav-container{
   position: relative;
     width: 50%;
@@ -141,6 +145,7 @@ body {
 .pv-brand-logo{
   display: block;
     box-sizing: border-box;
+    width: 100px;
 }
 .radio-button-container{
   display: block;
@@ -205,11 +210,11 @@ body {
   .overview-content{
     font-size: 22px;
   }
-  .table-movie{
+  /* .table-movie{
     width: 300px;
-  }
+  } */
   .pv-brand-logo{
-    width: 250px;
+    width: 187px;
   }
 }
   @media screen and (max-width: 1000px) {
@@ -222,11 +227,11 @@ body {
     .overview-content{
       font-size: 22px;
     }
-    .table-movie{
+    /* .table-movie{
       width: 200px;
-    }
+    } */
     .pv-brand-logo{
-      width: 200px;
+      width: 150px;
     }
     .search-text-container {
       width: 75%
@@ -234,7 +239,7 @@ body {
   }
   @media screen and (max-width: 950px) {
     .movie-img-big-container{
-      width: 100%;
+      width: 500px;
     }
     .overview-container{
       margin: 30px;
@@ -252,7 +257,7 @@ body {
       width: 100px;
     }
     .pv-brand-logo{
-      width: 160px;
+      width: 130px;
     }
     .search-text-container {
       width: 50%
@@ -263,7 +268,7 @@ body {
         width: 50px;
       }
       .pv-brand-logo{
-        width: 120px;
+        width: 100px;
       }
       .search-text-container {
         width: 30%
@@ -278,6 +283,6 @@ body {
       width: 80px;
     }
     .search-text-container {
-      width: 20%
+      width: 10%
     }
 }

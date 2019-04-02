@@ -11,7 +11,7 @@
   },
   "scripts": {
     "build": "webpack",
-    "start": "webpack-dev-server --open"
+    "start": "./node_modules/.bin/webpack -d --watch --open"
   },
   "author": "Harshika",
   "license": "ISC",
