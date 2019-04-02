@@ -1,3 +1,10 @@
 # Movie-App:
+[click here to view](https://harshika-g.github.io/Movie-App/#/)
 
-Link for the Repository: <a href='https://harshika-g.github.io/Movie-App/#/'>Movie App</a>
+## Getting Started
+To get started, clone this repo, cd into the new repo, and type:
+ ```bash
+npm install
+npm start
+```
+A web server should start on localhost:8080/#/.
