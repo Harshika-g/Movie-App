@@ -144,8 +144,8 @@ body {
 
 .pv-brand-logo{
   display: block;
-    box-sizing: border-box;
-    width: 100px;
+  box-sizing: border-box;
+  width: 187px;
 }
 .radio-button-container{
   display: block;
@@ -198,6 +198,9 @@ body {
   }
   .movie-details {
     font-size: 15px
+  }
+  .pv-brand-logo{
+    width: 187px;
   }
 }
 @media screen and (max-width: 1200px) {

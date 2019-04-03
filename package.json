@@ -10,12 +10,13 @@
     ]
   },
   "scripts": {
-    "build": "webpack",
-    "start": "./node_modules/.bin/webpack -d --watch --open"
+    "start": "webpack-dev-server --open",
+    "build": "webpack"
   },
   "author": "Harshika",
   "license": "ISC",
   "dependencies": {
+    "autoprefixer": "^9.5.0",
     "http-server": "^0.11.1",
     "lodash": "^4.17.11",
     "react": "^16.8.5",

@@ -1,10 +1,11 @@
 var path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: './app/index.js',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, ''),
     filename: 'index_bundle.js'
   },
   module: {
@@ -15,6 +16,9 @@ module.exports = {
   },
   mode: 'development',
   plugins: [
+    new HtmlWebpackPlugin({
+      template: './app/index.html',
+    }),
     new CopyPlugin([
       { from: 'images', to: './images' },
     ]),
